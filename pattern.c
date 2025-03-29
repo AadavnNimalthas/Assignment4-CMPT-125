@@ -1,3 +1,10 @@
+/*
+ * Pattern
+ * Aadavn Nimalthas
+ * March 28th, 2025
+ * With the user inputting a number of rows create and display a triangle like pattern with numbers.
+ */
+
 #include <stdio.h>
 
 void printARow(int startColNum, const int numOfRow);
@@ -7,7 +14,6 @@ int main() {
     int numRows;
     int attempts = 0;
 
-    // Read and validate the number of rows
     do {
         printf("Enter the number of rows: ");
         scanf("%d", &numRows);
@@ -32,7 +38,6 @@ int main() {
 }
 
 void printARow(int startColNum, const int numOfRow) {
-    // Calculate the number of tabs at the start (startColNum - 1)
     for (int i = 0; i < startColNum - 1; i++) {
         printf("\t");
     }
@@ -40,10 +45,8 @@ void printARow(int startColNum, const int numOfRow) {
     int current = startColNum;
     int elements = numOfRow - startColNum + 1;
 
-    // Print the first number
     printf("%d", current);
 
-    // Print subsequent numbers with tabs
     for (int i = 1; i < elements; i++) {
         current += startColNum + i;
         printf("\t%d", current);
@@ -55,10 +58,9 @@ void printARow(int startColNum, const int numOfRow) {
 void printPattern(int startColNum, const int numRows) {
     if (startColNum < 1) return;
 
-    // Print the upper part of the pattern
     printARow(startColNum, numRows);
-    // Recursively print the inner pattern
+
     printPattern(startColNum - 1, numRows);
-    // Print the lower mirrored part
+
     printARow(startColNum, numRows);
 }
