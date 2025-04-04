@@ -2,6 +2,7 @@
  * Pattern
  * Aadavn Nimalthas
  * March 28th, 2025
+ *
  * With the user inputting a number of rows create and display a triangle like pattern with numbers.
  */
 

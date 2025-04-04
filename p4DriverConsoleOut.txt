@@ -1,0 +1,45 @@
+Testing append to an empty list
+Modified linked list: 1.1
+Testing append to a non-empty list
+Modified linked list: 1.1 3.3
+New Linked list: 1.1 3.3 5.5 2.2 6.6 4.5
+Testing return value of isEmpty on non-empty list
+false: Non-Empty linked list: 1.1 3.3 5.5 2.2 6.6 4.5
+Testing length, should be 1: 6
+Testing removelist: should leave an empty list
+Testing length, list should be empty: 0
+Testing return value of isEmpty)() on empty list
+true: Empty linked list:
+
+
+
+Rebuilt Linked list: 1.1 3.3 5.5 2.2 6.6 4.5
+Testing removeNodeN for 6th and last node
+Modified linked list: 1.1 3.3 5.5 2.2 6.6
+Testing removeNodeN for 1st node
+Modified linked list: 3.3 5.5 2.2 6.6
+Testing removeNodeN for 2nd remaining node
+Modified linked list: 3.3 2.2 6.6
+List destroyed
+
+
+value of stack.isEmpty() is: true
+top element of empty list 0
+after pushing 10 onto the stack:10
+after pushing 2 onto the stack:10 2
+after pushing 7 onto the stack:10 2 7
+after pushing 23 onto the stack:10 2 7 23
+Stack: 10 2 7 23
+value of stack.isEmpty() is: false
+the 1st value popped off the stack is 23
+the 2nd value popped off the stack is 7
+Stack after pop: 10 2
+Destructor successful
+value of stack.isEmpty() is: true
+
+
+
+count of nodes 11 height of stack 11
+6.7 2.5 3.3 4.5 9.2 1.1 5.4 6.7 1.1 9.2 9.2
+Selection sort sorted linked list:
+9.2 9.2 9.2 6.7 6.7 5.4 4.5 3.3 2.5 1.1 1.1

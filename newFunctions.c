@@ -243,7 +243,6 @@ Stats* findStats(ListNode* start) {
 		return NULL;
 	}
 
-	// Initialize stats with default values
 	stats->count = 0;
 	stats->sum = 0;
 	stats->average = 0.0;
@@ -251,14 +250,13 @@ Stats* findStats(ListNode* start) {
 	stats->maximum = 0;
 
 	if (start == NULL) {
-		return stats; // Empty list
+		return stats;
 	}
 
 	int count = 0;
 	int sum = 0;
 	int min, max;
 
-	// Initialize min and max with the first node's value
 	min = start->value;
 	max = start->value;
 
@@ -267,14 +265,12 @@ Stats* findStats(ListNode* start) {
 		count++;
 		sum += current->value;
 
-		// Update min and max
 		if (current->value < min) min = current->value;
 		if (current->value > max) max = current->value;
 
 		current = current->next;
 	}
 
-	// Assign computed values to stats
 	stats->count = count;
 	stats->sum = sum;
 	stats->average = (double)sum / count;
@@ -284,10 +280,9 @@ Stats* findStats(ListNode* start) {
 	return stats;
 }
 
-// Implementation of reverseList
 void reverseList(LinkedList* list) {
 	if (list == NULL || list->head == NULL) {
-		return; // Nothing to reverse
+		return;
 	}
 
 	ListNode* prev = NULL;
