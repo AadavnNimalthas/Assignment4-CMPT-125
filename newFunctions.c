@@ -1,3 +1,11 @@
+/*
+	Aadavn Nimalthas
+	April 5th, 2025
+
+	newFunctions.c - Two C functions where findStats() calculates stats for linked list and 
+ 			 reverseList() reverses the linked list in place
+*/
+
 Stats* findStats(ListNode* start) {
 	Stats* stats = (Stats*)malloc(sizeof(Stats));
 	if (stats == NULL) {
