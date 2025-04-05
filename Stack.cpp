@@ -1,3 +1,10 @@
+/*
+    Aadavn Nimalthas
+    April 5th, 2025
+
+    Stack.cpp - A C++ class that implements a stack
+*/
+
 #include "Stack.h"
 #include <iostream>
 using namespace std;
