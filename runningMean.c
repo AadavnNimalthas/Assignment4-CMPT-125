@@ -53,7 +53,7 @@ int main() {
         }
         if (numMeas <= 0 || numMeas > 40) {
             fprintf(stderr, "ERROR: numMeas is out of range\n");
-            fprintf(stderr, "    enter 0<numMeas<=40\n");
+            fprintf(stderr, "       enter 0<numMeas<=40\n");
             num_attempts++;
         } else break;
     } while (num_attempts < 3);
