@@ -4,10 +4,6 @@ using namespace std;
 
 Stack::Stack() {}
 
-Stack::~Stack() {
-    list.freeList();
-}
-
 int Stack::height() const {
     return list.lengthList();
 }

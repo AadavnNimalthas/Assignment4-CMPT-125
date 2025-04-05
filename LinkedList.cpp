@@ -7,10 +7,6 @@ LinkedList::LinkedList() {
 	head = nullptr;
 }
 
-LinkedList::~LinkedList() {
-	freeList();
-}
-
 bool LinkedList::isEmpty() const {
 	return head == nullptr;
 }
@@ -18,8 +14,9 @@ bool LinkedList::isEmpty() const {
 void LinkedList::appendListNode(double val) {
 	ListNode* newNode = new ListNode{val, nullptr};
 	if (!head) {
-		head = newNode;
-	} else {
+	head = newNode;
+} 
+	else {
 		ListNode* current = head;
 		while (current->next) {
 			current = current->next;
@@ -31,8 +28,8 @@ void LinkedList::appendListNode(double val) {
 void LinkedList::displayList() const {
 	ListNode* current = head;
 	while (current) {
-		cout << current->value << " ";
-		current = current->next;
+	cout << current->value << " ";
+	current = current->next;
 	}
 	cout << endl;
 }
@@ -51,7 +48,7 @@ double LinkedList::removeListNodeN(int index) {
 	if (index <= 0 || index > lengthList()) {
 		cerr << "ERROR: There is no element with index " << index << endl;
 		return 0.0;
-	}
+}
 
 	ListNode* current = head;
 	ListNode* prev = nullptr;
@@ -77,16 +74,6 @@ double LinkedList::removeListNodeN(int index) {
 		delete current;
 	}
 	return val;
-}
-
-void LinkedList::freeList() {
-	ListNode* current = head;
-	while (current) {
-		ListNode* temp = current;
-		current = current->next;
-		delete temp;
-	}
-	head = nullptr;
 }
 
 void LinkedList::swapNodeData(ListNode* node1, ListNode* node2) {
