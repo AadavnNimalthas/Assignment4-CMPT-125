@@ -6,7 +6,6 @@
 
 */
 
-
 #include "LinkedList.h"
 #include <iostream>
 #include <iomanip>
@@ -16,10 +15,10 @@ using namespace std;
 LinkedList::LinkedList() : head(nullptr) {}
 
 LinkedList::~LinkedList() {
-    ListNode* current = head;
-    while (current != nullptr) {
-        ListNode* temp = current;
-        current = current->next;
+    ListNode* currentp = head;
+    while (currentp != nullptr) {
+        ListNode* temp = currentp;
+        currentp = currentp->next;
         delete temp;
     }
     head = nullptr;
@@ -30,33 +29,33 @@ bool LinkedList::isEmpty() const {
 }
 
 void LinkedList::appendListNode(double val) {
-    ListNode* newNode = new ListNode{val, nullptr};
+    ListNode* newNodep = new ListNode{val, nullptr};
     if (!head) {
-        head = newNode;
+        head = newNodep;
     } else {
-        ListNode* current = head;
-        while (current->next) {
-            current = current->next;
+        ListNode* currentp = head;
+        while (currentp->next) {
+            currentp = currentp->next;
         }
-        current->next = newNode;
+        currentp->next = newNodep;
     }
 }
 
 void LinkedList::displayList() const {
-    ListNode* current = head;
-    while (current) {
-        cout << fixed << setprecision(1) << current->value << " ";
-        current = current->next;
+    ListNode* currentp = head;
+    while (currentp) {
+        cout << fixed << setprecision(1) << currentp->value << " ";
+        currentp = currentp->next;
     }
     cout << endl;
 }
 
 int LinkedList::lengthList() const {
     int count = 0;
-    ListNode* current = head;
-    while (current) {
+    ListNode* currentp = head;
+    while (currentp) {
         ++count;
-        current = current->next;
+        currentp = currentp->next;
     }
     return count;
 }
@@ -67,28 +66,28 @@ double LinkedList::removeListNodeN(int index) {
         return 0.0;
     }
 
-    ListNode* current = head;
-    ListNode* prev = nullptr;
+    ListNode* currentp = head;
+    ListNode* prevp = nullptr;
     double val = 0.0;
     int count = 1;
 
     if (index == 1) {
-        head = current->next;
-        val = current->value;
-        delete current;
+        head = currentp->next;
+        val = currentp->value;
+        delete currentp;
         return val;
     }
 
     while (count < index) {
-        prev = current;
-        current = current->next;
+        prevp = currentp;
+        currentp = currentp->next;
         ++count;
     }
 
-    if (current) {
-        prev->next = current->next;
-        val = current->value;
-        delete current;
+    if (currentp) {
+        prevp->next = currentp->next;
+        val = currentp->value;
+        delete currentp;
     }
     return val;
 }
@@ -100,13 +99,13 @@ void LinkedList::swapNodeData(ListNode* node1, ListNode* node2) {
 }
 
 void LinkedList::selectionSort() {
-    for (ListNode* i = head; i && i->next; i = i->next) {
-        ListNode* maxNode = i;
-        for (ListNode* j = i->next; j; j = j->next) {
-            if (j->value > maxNode->value) {
-                maxNode = j;
+    for (ListNode* ip = head; ip && ip->next; ip = ip->next) {
+        ListNode* maxNodep = i;
+        for (ListNode* jp = ip->next; jp; jp = jp->next) {
+            if (jp->value > maxNodep->value) {
+                maxNodep = jp;
             }
         }
-        swapNodeData(i, maxNode);
+        swapNodeData(ip, maxNodep);
     }
 }
