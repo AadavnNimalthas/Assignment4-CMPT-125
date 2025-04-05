@@ -2,7 +2,6 @@
  * Pattern
  * Aadavn Nimalthas
  * March 28th, 2025
- *
  * With the user inputting a number of rows create and display a triangle like pattern with numbers.
  */
 
@@ -20,7 +19,7 @@ int main() {
         scanf("%d", &numRows);
         if (numRows < 1 || numRows > 12) {
             printf("ERROR: The number of rows out of range\n");
-            printf("    1 <= number of rows <= 12\n");
+            printf("       1 <= number of rows <= 12\n");
             attempts++;
         } else {
             break;
@@ -39,8 +38,8 @@ int main() {
 }
 
 void printARow(int startColNum, const int numOfRow) {
-    for (int i = 0; i < startColNum - 1; i++) {
-        printf("\t");
+    for (int i = 0; i < startColNum; i++) {
+        printf("     ");
     }
 
     int current = startColNum;
@@ -50,7 +49,7 @@ void printARow(int startColNum, const int numOfRow) {
 
     for (int i = 1; i < elements; i++) {
         current += startColNum + i;
-        printf("\t%d", current);
+        printf("%5d", current);
     }
 
     printf("\n");
