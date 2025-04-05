@@ -1,3 +1,12 @@
+/*
+    Aadavn Nimalthas
+    April 5th, 2025
+    
+    LinkedList.cpp - A C++ class that implements a linked list
+
+*/
+
+
 #include "LinkedList.h"
 #include <iostream>
 #include <iomanip>
