@@ -1,0 +1,215 @@
+Errors
+usr/bin/g++-11 -fdiagnostics-color=always -g /home/ana168/Downloads/p4Driver.cpp -o /home/ana168/Downloads/p4Driver
+/usr/bin/ld: /tmp/ccZ7y4Kj.o: in function `main':
+/home/ana168/Downloads/p4Driver.cpp:8: undefined reference to `LinkedList::LinkedList()'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:9: undefined reference to `Stack::Stack()'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:12: undefined reference to `LinkedList::appendListNode(double)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:15: undefined reference to `LinkedList::displayList() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:16: undefined reference to `LinkedList::appendListNode(double)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:19: undefined reference to `LinkedList::displayList() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:20: undefined reference to `LinkedList::appendListNode(double)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:21: undefined reference to `LinkedList::appendListNode(double)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:22: undefined reference to `LinkedList::appendListNode(double)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:23: undefined reference to `LinkedList::appendListNode(double)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:25: undefined reference to `LinkedList::displayList() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:28: undefined reference to `LinkedList::isEmpty() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:30: undefined reference to `LinkedList::displayList() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:32: undefined reference to `LinkedList::lengthList() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:33: undefined reference to `LinkedList::~LinkedList()'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:36: undefined reference to `LinkedList::lengthList() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:37: undefined reference to `LinkedList::displayList() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:39: undefined reference to `LinkedList::isEmpty() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:41: undefined reference to `LinkedList::displayList() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:45: undefined reference to `LinkedList::appendListNode(double)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:46: undefined reference to `LinkedList::appendListNode(double)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:47: undefined reference to `LinkedList::appendListNode(double)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:48: undefined reference to `LinkedList::appendListNode(double)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:49: undefined reference to `LinkedList::appendListNode(double)'
+/usr/bin/ld: /tmp/ccZ7y4Kj.o:/home/ana168/Downloads/p4Driver.cpp:50: more undefined references to `LinkedList::appendListNode(double)' follow
+/usr/bin/ld: /tmp/ccZ7y4Kj.o: in function `main':
+/home/ana168/Downloads/p4Driver.cpp:52: undefined reference to `LinkedList::displayList() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:54: undefined reference to `LinkedList::removeListNodeN(int)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:57: undefined reference to `LinkedList::displayList() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:61: undefined reference to `LinkedList::removeListNodeN(int)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:63: undefined reference to `LinkedList::displayList() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:67: undefined reference to `LinkedList::removeListNodeN(int)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:69: undefined reference to `LinkedList::displayList() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:70: undefined reference to `LinkedList::~LinkedList()'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:75: undefined reference to `Stack::isEmpty() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:76: undefined reference to `Stack::pop()'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:78: undefined reference to `Stack::push(double)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:80: undefined reference to `Stack::displayStack() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:81: undefined reference to `Stack::push(double)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:83: undefined reference to `Stack::displayStack() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:84: undefined reference to `Stack::push(double)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:86: undefined reference to `Stack::displayStack() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:87: undefined reference to `Stack::push(double)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:89: undefined reference to `Stack::displayStack() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:93: undefined reference to `Stack::displayStack() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:94: undefined reference to `Stack::isEmpty() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:98: undefined reference to `Stack::pop()'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:99: undefined reference to `Stack::pop()'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:102: undefined reference to `Stack::displayStack() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:103: undefined reference to `Stack::~Stack()'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:105: undefined reference to `Stack::isEmpty() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:106: undefined reference to `Stack::pop()'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:110: undefined reference to `Stack::Stack()'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:114: undefined reference to `Stack::push(double)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:116: undefined reference to `Stack::push(double)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:118: undefined reference to `Stack::push(double)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:120: undefined reference to `Stack::push(double)'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:122: undefined reference to `Stack::push(double)'
+/usr/bin/ld: /tmp/ccZ7y4Kj.o:/home/ana168/Downloads/p4Driver.cpp:124: more undefined references to `Stack::push(double)' follow
+/usr/bin/ld: /tmp/ccZ7y4Kj.o: in function `main':
+/home/ana168/Downloads/p4Driver.cpp:139: undefined reference to `Stack::height() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:140: undefined reference to `Stack::displayStack() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:143: undefined reference to `Stack::sortStack()'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:145: undefined reference to `Stack::displayStack() const'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:149: undefined reference to `Stack::~Stack()'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:149: undefined reference to `Stack::~Stack()'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:149: undefined reference to `LinkedList::~LinkedList()'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:149: undefined reference to `Stack::~Stack()'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:149: undefined reference to `Stack::~Stack()'
+/usr/bin/ld: /home/ana168/Downloads/p4Driver.cpp:149: undefined reference to `LinkedList::~LinkedList()'
+collect2: error: ld returned 1 exit status
+
+current LinkedList.cpp
+#include "LinkedList.h"
+#include <iostream>
+#include <iomanip>
+#include <cstdlib>
+using namespace std;
+
+LinkedList::LinkedList() : head(nullptr) {}
+
+LinkedList::~LinkedList() {
+    ListNode* current = head;
+    while (current != nullptr) {
+        ListNode* temp = current;
+        current = current->next;
+        delete temp;
+    }
+    head = nullptr;
+}
+
+bool LinkedList::isEmpty() const {
+    return head == nullptr;
+}
+
+void LinkedList::appendListNode(double val) {
+    ListNode* newNode = new ListNode{val, nullptr};
+    if (!head) {
+        head = newNode;
+    } else {
+        ListNode* current = head;
+        while (current->next) {
+            current = current->next;
+        }
+        current->next = newNode;
+    }
+}
+
+void LinkedList::displayList() const {
+    ListNode* current = head;
+    while (current) {
+        cout << fixed << setprecision(1) << current->value << " ";
+        current = current->next;
+    }
+    cout << endl;
+}
+
+int LinkedList::lengthList() const {
+    int count = 0;
+    ListNode* current = head;
+    while (current) {
+        ++count;
+        current = current->next;
+    }
+    return count;
+}
+
+double LinkedList::removeListNodeN(int index) {
+    if (index <= 0 || index > lengthList()) {
+        cerr << "ERROR: There is no element with index " << index << endl;
+        return 0.0;
+    }
+
+    ListNode* current = head;
+    ListNode* prev = nullptr;
+    double val = 0.0;
+    int count = 1;
+
+    if (index == 1) {
+        head = current->next;
+        val = current->value;
+        delete current;
+        return val;
+    }
+
+    while (count < index) {
+        prev = current;
+        current = current->next;
+        ++count;
+    }
+
+    if (current) {
+        prev->next = current->next;
+        val = current->value;
+        delete current;
+    }
+    return val;
+}
+
+void LinkedList::swapNodeData(ListNode* node1, ListNode* node2) {
+    double temp = node1->value;
+    node1->value = node2->value;
+    node2->value = temp;
+}
+
+void LinkedList::selectionSort() {
+    for (ListNode* i = head; i && i->next; i = i->next) {
+        ListNode* maxNode = i;
+        for (ListNode* j = i->next; j; j = j->next) {
+            if (j->value > maxNode->value) {
+                maxNode = j;
+            }
+        }
+        swapNodeData(i, maxNode);
+    }
+}
+
+Current Stack.cpp
+#include "Stack.h"
+#include <iostream>
+using namespace std;
+
+Stack::Stack() {}
+
+Stack::~Stack() {}
+
+int Stack::height() const {
+    return list.lengthList();
+}
+
+void Stack::push(double val) {
+    list.appendListNode(val);
+}
+
+double Stack::pop() {
+    if (list.isEmpty()) {
+        return 0.0;
+    }
+    return list.removeListNodeN(list.lengthList());
+}
+
+bool Stack::isEmpty() const {
+    return list.isEmpty();
+}
+
+void Stack::displayStack() const {
+    list.displayList();
+}
+
+void Stack::sortStack() {
+    list.selectionSort();
+}
