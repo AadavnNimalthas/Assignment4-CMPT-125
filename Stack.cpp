@@ -9,9 +9,13 @@
 #include <iostream>
 using namespace std;
 
-Stack::Stack() {}
+Stack::Stack() {
+    
+}
 
-Stack::~Stack() {}
+Stack::~Stack() {
+    
+}
 
 int Stack::height() const {
     return list.lengthList();
