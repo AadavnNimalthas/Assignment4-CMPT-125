@@ -7,20 +7,20 @@
 */
 
 Stats* findStats(ListNode* start) {
-	Stats* stats = (Stats*)malloc(sizeof(Stats));
-	if (stats == NULL) {
+	Stats* statsp = (Stats*)malloc(sizeof(Stats));
+	if (statsp == NULL) {
 		fprintf(stderr, "Memory allocation failed for Stats structure.\n");
 		return NULL;
 	}
 
-	stats->count = 0;
-	stats->sum = 0;
-	stats->average = 0.0;
-	stats->minimum = 0;
-	stats->maximum = 0;
+	statsp->count = 0;
+	statsp->sum = 0;
+	statsp->average = 0.0;
+	statsp->minimum = 0;
+	statsp->maximum = 0;
 
 	if (start == NULL) {
-		return stats;
+		return statsp;
 	}
 
 	int count = 0;
@@ -30,24 +30,24 @@ Stats* findStats(ListNode* start) {
 	min = start->value;
 	max = start->value;
 
-	ListNode* current = start;
-	while (current != NULL) {
+	ListNode* currentp = start;
+	while (currentp != NULL) {
 		count++;
-		sum += current->value;
+		sum += currentp->value;
 
-		if (current->value < min) min = current->value;
-		if (current->value > max) max = current->value;
+		if (currentp->value < min) min = currentp->value;
+		if (currentp->value > max) max = currentp->value;
 
-		current = current->next;
+		currentp = currentp->next;
 	}
 
-	stats->count = count;
-	stats->sum = sum;
-	stats->average = (double)sum / count;
-	stats->minimum = min;
-	stats->maximum = max;
+	statsp->count = count;
+	statsp->sum = sum;
+	statsp->average = (double)sum / count;
+	statsp->minimum = min;
+	statsp->maximum = max;
 
-	return stats;
+	return statsp;
 }
 
 void reverseList(LinkedList* list) {
@@ -55,16 +55,16 @@ void reverseList(LinkedList* list) {
 		return;
 	}
 
-	ListNode* prev = NULL;
-	ListNode* current = list->head;
-	ListNode* next = NULL;
+	ListNode* prevp = NULL;
+	ListNode* currentp = list->head;
+	ListNode* nextp = NULL;
 
-	while (current != NULL) {
-		next = current->next;
-		current->next = prev;
-		prev = current;
-		current = next;
+	while (currentp != NULL) {
+		nextp = currentp->next;
+		currentp->nextp = prevp;
+		prevp = currentp;
+		currentp = nextp;
 	}
 
-	list->head = prev;
+	list->head = prevp;
 }
