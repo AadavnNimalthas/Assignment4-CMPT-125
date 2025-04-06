@@ -21,10 +21,13 @@ int main() {
             printf("ERROR: The number of rows out of range\n");
             printf("       1 <= number of rows <= 12\n");
             attempts++;
-        } else {
+        } 
+        else {
             break;
         }
-    } while (attempts < 3);
+    } 
+    
+    while (attempts < 3);
 
     if (attempts >= 3) {
         printf("ERROR: Too many tries, attempting to read the number of rows for the pattern.\n");
