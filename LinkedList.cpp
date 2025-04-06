@@ -24,7 +24,8 @@ void LinkedList::appendListNode(double val) {
     ListNode* newNode = new ListNode{val, nullptr};
     if (!head) {
         head = newNode;
-    } else {
+    } 
+    else {
         ListNode* current = head;
         while (current->next) {
             current = current->next;
