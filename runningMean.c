@@ -19,7 +19,7 @@ void WeightedRunningMean(double* measurements, double* weightedRunningMean, int 
 
 int main() {
     char filename[256];
-    FILE *fp = NULL;
+    FILE *filep = NULL;
     int attempts = 0;
     int numMeas = 0;
     int num_attempts = 0;
@@ -30,13 +30,14 @@ int main() {
             fprintf(stderr, "Error reading filename\n");
             exit(1);
         }
-        fp = fopen(filename, "r");
-        if (fp) break;
+        filep = fopen(filename, "r");
+        if (filep) break;
         else {
             fprintf(stderr, "ERROR: Input file %s not opened\n", filename);
             attempts++;
         }
-    } while (attempts < 3);
+    }
+    while (attempts < 3);
 
     if (attempts >= 3) {
         fprintf(stderr, "ERROR: too many failures opening input file\n");
@@ -55,12 +56,14 @@ int main() {
             fprintf(stderr, "ERROR: numMeas is out of range\n");
             fprintf(stderr, "       enter 0<numMeas<=40\n");
             num_attempts++;
-        } else break;
-    } while (num_attempts < 3);
+        }
+        else break;
+    }
+    while (num_attempts < 3);
 
     if (num_attempts >= 3) {
         fprintf(stderr, "ERROR: too many failures reading the number of measurements\n");
-        fclose(fp);
+        fclose(filep);
         exit(1);
     }
 
@@ -68,16 +71,16 @@ int main() {
     double *myRunningMeanp = malloc(numMeas * sizeof(double));
     if (!myMeasurementsp || !myRunningMeanp) {
         fprintf(stderr, "Memory allocation failed\n");
-        fclose(fp);
+        fclose(filep);
         exit(1);
     }
 
     int actualCount = 0;
     double value;
-    while (actualCount < numMeas && fscanf(fp, "%lf", &value) == 1) {
+    while (actualCount < numMeas && fscanf(filep, "%lf", &value) == 1) {
         myMeasurementsp[actualCount++] = value;
     }
-    fclose(fp);
+    fclose(filep);
 
     if (actualCount == 0) {
         fprintf(stderr, "ERROR: input file is empty\n");
